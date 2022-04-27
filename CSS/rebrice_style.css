@@ -1,0 +1,123 @@
+/*body*/
+body
+{background-color: #BFBFBD;
+margin: 0%;}
+
+body a 
+{text-decoration: none;
+color: #0D0D0D;}
+
+/*----*/
+audio
+{opacity: 0;}
+/* main_container*/ 
+.main_container
+{display: grid;
+grid-template-rows: 400px 400px 500px;
+grid-template-columns: repeat(12, 8.33%);
+grid-template-areas:   " . . tab tab tab  tab  tab tab tab tab . . "
+                        " . . tab tab tab  tab  tab tab tab tab . . "
+                        " . . lc lc lc lc rc rc rc rc .  . ";} 
+                
+/* contents */ 
+.left_content
+{grid-area: lc;} 
+
+.left_content img 
+{max-width: 100%;
+max-height: 400px;}
+
+.right_content
+{grid-area: rc;
+display: flex;
+align-items: center;
+justify-content: center}
+/*---------------*/
+
+/*nav*/
+.nav-bar
+{background-color: #595857;
+grid-area: nav; 
+display: flex;
+align-items: center; 
+justify-content: space-around;
+border-bottom: #0D0D0D solid 0.1rem;
+height: 50px;}
+
+.title::first-letter
+{color: whitesmoke;}
+
+.nav ul 
+{display: flex;
+flex-direction: row;  
+justify-content: center;
+align-items: center;
+list-style: none;
+gap: 1rem;}
+
+#clicked
+{color: aliceblue;}
+
+nav , ul ,li :hover 
+{color: aliceblue;}
+
+/*--table--*/
+table
+{border: #0D070A solid 0.2em;
+grid-area: tab;}
+
+th
+{background-color: #BFBCBA;
+color: #0D070A;
+border:solid 0.1em #0D070A;}
+
+.first_collumn
+{text-align: right;}
+
+.second_row
+{background-color: #73706C;
+color: #F2F2F2;}
+
+tr td 
+{border: solid 0.1em black;}
+
+.top 
+{color: rgb(149, 221, 6);}
+
+/*--table-tooltip--*/
+.parentCell{
+position: relative;}
+
+.tooltip{
+display: none;
+position: absolute; 
+z-index: 100;
+border: 1px;
+background-color: white;
+border: 1px solid green;
+padding: 3px;
+color: green; 
+top: 30px; 
+left: 50px;
+text-align: center;}
+.parentCell:hover span.tooltip{
+display:block;}
+
+.tooltip img
+{width: 100%;
+max-height: 200px;}
+
+/*---footer---*/         
+.footer
+{background-color: #011F26;
+color: #BFBFBD;
+display: flex;
+align-items: center;
+justify-content: space-around;}
+
+.footer a 
+{color: #BFBFBD;}
+
+.fot-contact
+{display: flex;
+flex-direction: column;}

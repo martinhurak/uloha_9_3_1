@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../CSS/add_rev.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/82df6f489c.js" crossorigin="anonymous"></script>
+
+<script>
+    
+    function click_butt(){
+        alert("stahuje sa historia prehladania")
+    }
+</script>
+</head>
+    <body>
+        <div class="nav-bar">
+            <h1 class="title">Filmy, čo mám rád</h1>
+            <nav class="nav">
+                <ul class="nav-box"> 
+                    <li><a href="../index.html" ><i class="fas fa-home"></i> &nbsp; domov </a></li> 
+                    <li><a href="./rebricek_najlepsich_filmov.html"><i class="fas fa-chart-line"></i> &nbsp; rerbricek najlpepšich filmov </a></li>
+                    <li><a href="./add-review.html.html" id="clicked"><i class="fas fa-plus"></i> &nbsp; Pridať recenziu</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="main_container" >
+        <div class="content">
+            <form  method="get" autocomplete="on" >
+                <h1>formulár na pridanie recenzie </h1>
+                <input placeholder="názov filmu:" type="text" name="name" id="nazov" required>
+                <input placeholder="meno/nick :" type="text" name="name" id="meno">
+                <input placeholder="email :" type="email" name="email" id="e-mail" required >
+                <label for="date"> dátum, kedy bol film naposledny pozeraný : </label>
+                <input type="date" name="date" id="date">
+                <label for="range">číselné hodnotenie od 0 do 100</label>
+                <input type="range" name="range" id="range" step="10" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+                <output>50</output> 
+                <span>%</span>
+                <br>
+                <label for="movies">žáner filmu</label>
+                <select id="movies" name="movies">
+                    <option value="horor">horor</option>
+                    <option value="anime">Anime</option>
+                    <option value="comedy">komedia</option>
+                    <option value="adventura">dobrodružny</option>
+                </select>
+                
+                <textarea placeholder="kommentar"  name="textarea" id="commentar" rows="5"> </textarea>
+                <input onclick="click_butt" class="sub_button" type="submit" value="odoslať recenziu">
+                <input type="reset" name="reset" id="cancel" value="zrušit">
+            </form>
+        </div>
+    </div>
+        <footer class="footer">
+            <span class="fot-contact">
+                <a href="mailto:mato.hurak@gmail.com"> mail me : mato.hurak@gmail.com</a>
+                <a href="tel:+4210000000">tel :+421 *** *** </a>
+            </span> 
+        <span>Author: Martin Hurák</span> 
+            <div class="fot-icons">
+                <a href="#"> <i class="fab fa-facebook"></i></a>
+                <a href="#"> <i class="fab fa-instagram"></i></a>
+                <a href="#"> <i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

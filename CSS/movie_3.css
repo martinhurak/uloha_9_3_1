@@ -1,0 +1,122 @@
+/*nav*/
+.nav-bar
+{background-color: #595857;
+grid-area: nav; 
+display: flex;
+align-items: center; 
+justify-content: space-around;
+border-bottom: #0D0D0D solid 0.1rem;
+height:50px;
+width: auto;}
+
+.title::first-letter
+{color: whitesmoke;}
+
+.nav ul 
+{display: flex;
+flex-direction: row;  
+justify-content: center;
+align-items: center;
+list-style: none;
+gap: 1rem;}
+
+nav  ul li :hover 
+
+{color: aliceblue;}
+/* main_container*/ 
+.main_container
+{display: grid;
+grid-template-rows: 120px 600px 190px 180px 600px;
+grid-template-columns: repeat(12, 8.33%);
+grid-template-areas:   " . . mt mt mt mt mt mt mt mt . . " 
+                        " . . vid vid vid vid vid vid vid vid . . " 
+                         " . . cont cont cont cont cont cont cont cont  . . " 
+                         " . . li li li li ac ac ac ac . . "
+                         " . .  svg svg svg svg svg svg svg svg . . "} 
+
+.movie_title 
+{grid-area: mt;}
+
+.vid
+{grid-area: vid;}
+
+.content
+{grid-area: cont;}
+
+.left_info
+{grid-area: li;}
+
+.actors
+{grid-area: ac;}
+
+.svg 
+{grid-area: svg;}
+svg
+{border: black solid 0.1em;}
+.c1
+{
+fill: #7C99E1;}
+.portal 
+{fill: orange;}
+/*--body--*/
+
+body
+{background-color: #BFBFBD;
+    margin: 0px;}
+
+body a 
+{text-decoration: none;
+color: #0D0D0D;}
+
+/*--actors/--*/ 
+.actors ul .men {list-style-image: url(../icons_img/man.png);}
+.actors ul .woman {list-style-image: url(../icons_img/woman.png);}
+
+.men
+{color: blue;}
+
+.woman
+{color: red;}
+/*aditional-info*/ 
+.add-info {
+list-style-type: none;
+}
+.add-info li::before
+{font-family: "Font Awesome 5 Free";
+color: #595857;
+margin-right: 1em;}
+.add-info li:first-of-type::before 
+{
+content: "\f007";
+}
+.add-info li:nth-of-type(2)::before 
+{
+content: "\f556";
+}
+.add-info li:nth-of-type(3)::before 
+{
+content: "\f2bb";
+}
+.add-info li:nth-of-type(4)::before 
+{
+content: "\f556";
+}
+.add-info li:nth-of-type(5)::before 
+{
+content: "\f007";
+}
+
+/*---footer---*/      
+.footer
+{background-color: #011F26;
+color: #BFBFBD;
+display: flex;
+align-items: center;
+justify-content: space-around;}
+
+.footer a 
+{color: #BFBFBD;}
+
+.fot-contact
+{display: flex;
+flex-direction: column;}
