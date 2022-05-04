@@ -67,32 +67,10 @@ color: #0D0D0D;}
 {color: red;}
 /*aditional-info*/ 
 .add-info {
-list-style-type: none;
-}
-.add-info li::before
-{font-family: "Font Awesome 5 Free";
-color: #595857;
-margin-right: 1em;}
-.add-info li:first-of-type::before 
-{
-content: "\f007";
-}
-.add-info li:nth-of-type(2)::before 
-{
-content: "\f556";
-}
-.add-info li:nth-of-type(3)::before 
-{
-content: "\f2bb";
-}
-.add-info li:nth-of-type(4)::before 
-{
-content: "\f556";
-}
-.add-info li:nth-of-type(5)::before 
-{
-content: "\f007";
-}
+list-style-type: none;}
+
+.add-info li i
+{margin-right:1em ;}
 
 /*---footer---*/      
 .footer

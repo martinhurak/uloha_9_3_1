@@ -16,7 +16,10 @@ grid-template-areas:   " . . hed hed hed  hed  hed hed hed hed . . "
                         " . . main main main main main main main main  . . ";}    
 /*nav*/
 .nav-bar
-{background-color: #595857;
+
+{position: sticky;
+top: 0px;
+background-color: #595857;
 display: flex;
 align-items: center; 
 justify-content: space-around;
@@ -37,7 +40,8 @@ gap: 1rem;}
 
 
 #clicked
-{color: aliceblue;}
+{color: aliceblue;
+transform: rotate(20deg);}
 
 nav , ul ,li :hover 
 {color: aliceblue;}
